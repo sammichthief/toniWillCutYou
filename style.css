@@ -1,5 +1,6 @@
 html {
-	background-color: black;
+	background-color: white;
+	height: 100%;
 }
 
 
@@ -9,7 +10,8 @@ body {
 	font-weight: 400;
 	font-style: normal;
 	font-size: 13px;
-
+	height: 100%;
+	background-color: white;
 	}
 
  a {
@@ -19,11 +21,14 @@ body {
 .navbar-light .navbar-nav .nav-link {
 	color: black;
 	border: 2px solid transparent;
+	border-radius: 6px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
 	color: black;
 	border: 2px solid #8A2FE6;
+	transition-duration: 1s;
+	border-radius: 6px;
 }
 .navbar{
 	background-color: white;
@@ -77,29 +82,45 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-/*.margin {
-	margin: 75% 0;
-}*/
-
-.parallax {
-	background: url(assets/parallax-1.png);
-	min-height: 100%;
-	opacity: .95;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+.button1 {
+	text-align: center;
+	margin-bottom: 20px;
 }
 
 
-.parallax-inner {
-	padding-top: 10%;
-	padding-bottom: 10%;
+.parallax-1 {
+	background: url(assets/parallax-1.png);
+	height: 400px;
+}
 
-} 
+.parallax-2 {
+	background: url(assets/parallax-2.png);
+	height: 400px;
+}
+
+.parallax-3 {
+	background: url(assets/parallax-3.png);
+	height: 600px;
+	margin-bottom: 20px;
+}
+
+.parallax-1, .parallax-2, .parallax-3 {
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-left: 20px;
+	margin-right: 20px;
+	background-color: white;
+}
+
+
+
+
 .main-content {
-	padding-left: 20px;
-	padding-right: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
 	background-image: url(assets/body-background.jpg);
 }
 }
@@ -117,8 +138,7 @@ footer {
 	background-color: black;
 }
 #main-footer {
-	background-image: linear-gradient(#00FFFF, #00CDCD);
-	box-shadow: inset 0 0 100px hsla(0,0%,0%,.3);
+	background-image: linear-gradient(-180deg, #00CDCD 0%, #28A4A4 99%);
 	display: flex;
 	color: black;
 }
@@ -132,7 +152,7 @@ footer {
 
 
 
-#toni-footer {
+#social-footer {
 	flex: 1;
 	padding-left: 150px;
 }
@@ -142,8 +162,8 @@ footer {
 	line-height: 1.3;
 }
 
-.footer-social-icons {
-
+#social-footer img {
+	padding-left: 2px;
 }
 
 
@@ -153,4 +173,6 @@ footer {
 	max-height: 20px;
 
 }
+
+
 
